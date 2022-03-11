@@ -1,0 +1,13 @@
+<resources>
+    <!-- App Information -->
+    <string name="app_name">Actualidad Penal</string>
+    <string name="string_app_id">actualidad_penal</string>
+    <string name="revista_api_code">AP</string>
+
+    <!-- ABOUT SETTINGS -->
+    <string name="default_institutoPacifico_email_feedback">ventas@actualidadpenal.com.pe</string>
+    <string name="default_institutoPacifico_About_Link_website">http://actualidadpenal.com.pe/</string>
+    <string name="default_institutoPacifico_About_email">ventas@actualidadpenal.com.pe</string>
+    <string name="default_institutoPacifico_About_Link_facebook">actualidadpenal</string>
+
+</resources>

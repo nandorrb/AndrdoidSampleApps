@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:backgroundTint="@color/defaut_background_color"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_production_ultimate_recycler_view_adapter_top_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_production_ultimate_recycler_view_adapter_boletin_diario_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/spacing_tiny"
+            android:backgroundTint="@color/defaut_background_color"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.95">
+
+                <View
+                    android:layout_width="@dimen/spacing_small"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:id="@+id/textView_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="@string/action_placeholder"
+                    android:textColor="@color/defaut_background_color" />
+
+                <View
+                    android:layout_width="@dimen/spacing_small"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_rounded_corner_production_ultimate_recycler_view_adapter" />
+
+                <TextView
+                    android:id="@+id/textView_uploaded_date_boletin_diario_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_small"
+                    android:layout_marginStart="@dimen/spacing_small"
+                    android:text="@string/action_placeholder"
+                    android:textColor="@color/gray" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_custom_6dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/spacing_tiny"
+                    android:layout_weight="0.95" />
+
+            </LinearLayout>
+
+
+            <ImageButton
+                android:id="@+id/imageButton_share_article_boletin_item_UltimateRecyclerView"
+                android:layout_width="@dimen/spacing_large"
+                android:layout_height="@dimen/spacing_large"
+                android:layout_gravity="end"
+                android:layout_marginLeft="@dimen/spacing_small"
+                android:layout_marginStart="@dimen/spacing_small"
+                android:layout_weight="0.025"
+                android:background="@null"
+                android:contentDescription="@string/action_placeholder"
+                android:src="@drawable/ic_share_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton_star_article_boletin_item_UltimateRecyclerView"
+                android:layout_width="@dimen/spacing_large"
+                android:layout_height="@dimen/spacing_large"
+                android:layout_gravity="end"
+                android:layout_marginLeft="@dimen/spacing_small"
+                android:layout_marginStart="@dimen/spacing_small"
+                android:layout_weight="0.025"
+                android:background="@null"
+                android:contentDescription="@string/action_placeholder"
+                android:src="@drawable/ic_instituto_pacifico_favoritoblank_black_24dp" />
+
+            <Space
+                android:layout_width="@dimen/spacing_custom_6dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/spacing_tiny" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_production_ultimate_recycler_view_adapter_normas_legales_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/spacing_tiny"
+            android:backgroundTint="@color/defaut_background_color"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_production_ultimate_recycler_view_adapter_entidad"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/spacing_small"
+                android:layout_marginStart="@dimen/spacing_small"
+                android:text="@string/action_placeholder"
+                android:textColor="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:weightSum="1">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="@dimen/spacing_tiny"
+                    android:backgroundTint="@color/defaut_background_color"
+                    android:orientation="horizontal"
+                    android:layout_weight="0.95">
+
+                    <TextView
+                        android:id="@+id/textView_production_ultimate_recycler_view_adapter_organismo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/spacing_small"
+                        android:layout_marginStart="@dimen/spacing_small"
+                        android:text="@string/action_placeholder"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:id="@+id/textView_uploaded_date_normas_legales_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_small"
+                        android:layout_marginStart="@dimen/spacing_small"
+                        android:text="@string/action_placeholder"
+                        android:textColor="@color/gray" />
+
+                    <Space
+                        android:layout_width="@dimen/spacing_custom_6dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/spacing_tiny"
+                        android:layout_weight="0.95" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/imageButton_share_article_boletin_item_UltimateRecyclerView_2"
+                    android:layout_width="@dimen/spacing_large"
+                    android:layout_height="@dimen/spacing_large"
+                    android:layout_gravity="end"
+                    android:layout_marginLeft="@dimen/spacing_small"
+                    android:layout_marginStart="@dimen/spacing_small"
+                    android:layout_weight="0.025"
+                    android:background="@null"
+                    android:contentDescription="@string/action_placeholder"
+                    android:src="@drawable/ic_share_black_24dp" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_star_article_boletin_item_UltimateRecyclerView_2"
+                    android:layout_width="@dimen/spacing_large"
+                    android:layout_height="@dimen/spacing_large"
+                    android:layout_gravity="end"
+                    android:layout_marginLeft="@dimen/spacing_small"
+                    android:layout_marginStart="@dimen/spacing_small"
+                    android:layout_weight="0.025"
+                    android:background="@null"
+                    android:contentDescription="@string/action_placeholder"
+                    android:src="@drawable/ic_instituto_pacifico_favoritoblank_black_24dp" />
+
+                <Space
+                    android:layout_width="@dimen/spacing_custom_6dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/spacing_tiny" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title_article_boletin_item_utlimaterecyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout_production_ultimate_recycler_view_adapter_top_data"
+        android:layout_marginStart="@dimen/spacing_small"
+        android:layout_marginTop="@dimen/spacing_tiny"
+
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="@string/action_placeholder"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginLeft="@dimen/spacing_small" />
+
+    <TextView
+        android:id="@+id/description_article_boletin_item_utlimaterecyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_article_boletin_item_utlimaterecyclerview"
+        android:layout_marginBottom="@dimen/spacing_small"
+        android:layout_marginLeft="@dimen/spacing_small"
+        android:layout_marginStart="@dimen/spacing_small"
+        android:layout_marginTop="@dimen/spacing_tiny"
+        android:ellipsize="end"
+        android:maxLines="4"
+        android:text="@string/action_placeholder"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+
+    <ImageView
+        android:id="@+id/imageview_article_boletin_item_utlimaterecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/description_article_boletin_item_utlimaterecyclerview"
+        android:layout_marginTop="@dimen/spacing_tiny"
+        android:contentDescription="@string/action_placeholder"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_image_black_24dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/spacing_1dp"
+        android:layout_below="@+id/imageview_article_boletin_item_utlimaterecyclerview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:background="@color/colorPrimaryDark"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView_object_as_json_article_boletin_item_recyclerview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

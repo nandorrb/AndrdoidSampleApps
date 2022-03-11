@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <!-- PACKAGES DATA -
+
+
+    <string-array name="fragmets_names_or_titles">
+        <item>BOLETIN DIARIO</item>
+        <item>BOLETIN DE NORMAS LEGALES</item>
+        <item>SISTEMA DE INFORMACION</item>
+        <item>CONFIGURACION</item>
+        <item>CUENTA</item>
+    </string-array>
+
+
+    <string-array name="fragmets_packages_names">
+        <item>com.institutopacifico.actualidad.modules.boletines.fragments.BoletinDiarioFragment</item>
+        <item>com.institutopacifico.actualidad.modules.boletines.fragments.BoletinNormasLegalesFragment</item>
+      <item>com.institutopacifico.actualidad.modules.sistemadeinformacion.SistemaInformacionFragment</item>
+      <item>com.institutopacifico.actualidad.fragments.SettingsFragment</item>
+      <item>com.institutopacifico.actualidad.modules.account.MainAccountFragment</item>
+  </string-array>
+
+  <string-array name="fragmets_titles_and_packages_names">
+      <item>Boletin diario,com.institutopacifico.actualidad.fragments.BoletinDiarioFragment</item>
+      <item>Boletin de normas legales,com.institutopacifico.actualidad.fragments.BoletinNormasLegalesFragment</item>
+      <item>Sistema de Informacion,com.institutopacifico.actualidad.fragments.SistemaInformacionFragment</item>
+      <item>Indicadores financieros,com.institutopacifico.actualidad.fragments.IndicadoresFinancierosFragment</item>
+      <item>Vencimientos y Obligaciones,com.institutopacifico.actualidad.fragments.VencimientosObligacionesFragment</item>
+      <item>Configuracion,com.institutopacifico.actualidad.fragments.SettingsFragment</item>
+  </string-array>
+
+  <string-array name="main_navigation_bar_drawables">
+      <item>ic_instituto_pacifico_diario_dinamic_24dp</item>
+      <item>ic_instituto_pacifico_libro_dinamic_24dp</item>
+      <item>ic_instituto_pacifico_carpetas_dinamic_24dp</item>
+      <item>ic_instituto_pacifico_ajustes_dinamic_24dp</item>
+      <item>ic_person_dinamic_24dp</item>
+    </string-array>
+
+     PACKAGES DATA -->
+
+    <integer-array name="integer_fragments_in_development_position">
+        <!--
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+         -->
+    </integer-array>
+
+    <!--
+    ==============================================================================================================================
+     -->
+
+    <!-- OTHER PACKAGES DATA -->
+    <string-array name="other_fragmets_names_or_titles">
+        <item>CREACION DE CUENTA</item>
+        <item>RECUPERACION DE CUENTA</item>
+    </string-array>
+    <!--
+    <string-array name="other_fragmets_packages_names">
+        <item>com.institutopacifico.actualidad.modules.account.SignUpFragment</item>
+        <item>com.institutopacifico.actualidad.modules.account.PasswordRecoveryFragment</item>
+    </string-array>
+-->
+   </resources>

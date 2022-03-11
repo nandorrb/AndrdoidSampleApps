@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.design.widget.FloatingActionButton xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/fab_production_native_recycler_view_floating_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|end"
+    android:layout_margin="@dimen/spacing_small"
+    android:src="@drawable/ic_instituto_pacifico_carpetas_black_24dp" >
+
+    <!--  <com.marshalchen.ultimaterecyclerview.ui.floatingactionbutton.AddFloatingActionButton
+
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="right|bottom"
+          fab:plusIconColor="@color/colorAccent"
+          fab:urv_fab_colorNormal="@color/colorPrimary"/>
+
+          fab:addButtonColorNormal="@color/colorPrimary"
+      fab:addButtonColorPressed="@color/colorAccent"
+      fab:addButtonPlusIconColor="@color/colorPrimaryDark"
+      fab:urv_fab_colorPressed="@color/defaut_background_color"
+          -->
+
+
+    </android.support.design.widget.FloatingActionButton>

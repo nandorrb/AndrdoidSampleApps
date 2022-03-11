@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.institutopacifico.actualidad.activities.MainActivity"
+    tools:showIn="@layout/app_bar_main"/>
+
+<!-- -
+<com.marshalchen.ultimaterecyclerview.ui.floatingactionbutton.FloatingActionsMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/customfloatingActionMenu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginBottom="15dp"
+    android:layout_marginEnd="15dp"
+    android:visibility="gone"
+    fab:addButtonColorNormal="@color/colorPrimaryDark"
+    fab:addButtonColorPressed="@color/colorPrimary"
+    fab:addButtonPlusIconColor="@color/defaut_background_color"
+    fab:urv_fab_colorPressed="@color/colorAccent">
+    - -->
+        <!--  <com.marshalchen.ultimaterecyclerview.ui.floatingactionbutton.AddFloatingActionButton
+
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="right|bottom"
+              fab:plusIconColor="@color/colorAccent"
+              fab:urv_fab_colorNormal="@color/colorPrimary"/>
+
+              fab:addButtonColorNormal="@color/colorPrimary"
+          fab:addButtonColorPressed="@color/colorAccent"
+          fab:addButtonPlusIconColor="@color/colorPrimaryDark"
+          fab:urv_fab_colorPressed="@color/defaut_background_color"
+              -->
+<!--
+    <com.marshalchen.ultimaterecyclerview.ui.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_view_calendar_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:icon="@drawable/ic_instituto_pacifico_calendario_white_24dp"
+        fab:addButtonColorNormal="@color/colorPrimary"
+        fab:addButtonColorPressed="@color/colorPrimaryDark"
+        fab:addButtonPlusIconColor="@color/defaut_background_color"
+        fab:urv_fab_colorPressed="@color/colorPrimaryDark"
+        android:visibility="gone"
+        />
+
+    <com.marshalchen.ultimaterecyclerview.ui.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_view_search_articles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:icon="@drawable/ic_instituto_pacifico_busqueda_white_24dp"
+        fab:addButtonColorNormal="@color/colorPrimary"
+        fab:addButtonColorPressed="@color/colorPrimaryDark"
+        fab:addButtonPlusIconColor="@color/defaut_background_color"
+        fab:urv_fab_colorPressed="@color/colorPrimaryDark" />
+
+    <com.marshalchen.ultimaterecyclerview.ui.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_view_show_starred_articles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:icon="@drawable/ic_star_white_24dp"
+        fab:addButtonColorNormal="@color/colorPrimary"
+        fab:addButtonColorPressed="@color/colorPrimaryDark"
+        fab:addButtonPlusIconColor="@color/defaut_background_color"
+        fab:urv_fab_colorPressed="@color/colorPrimaryDark" />
+
+</com.marshalchen.ultimaterecyclerview.ui.floatingactionbutton.FloatingActionsMenu>
+     -->

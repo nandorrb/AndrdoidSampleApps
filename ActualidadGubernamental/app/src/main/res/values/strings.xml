@@ -1,0 +1,165 @@
+<resources>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- Secciones
+    <string name="string_fragment_home">HOME</string>
+    <string name="string_fragment_sistema_informacion">SISTEMA DE INFORMACION</string>
+    <string name="string_fragment_boletin_diario">BOLETIN DIARIO</string>
+    <string name="string_fragment_boletin_normas_legales">BOLETIN DE NORMAS LEGALES</string>
+    <string name="string_fragment_indicadores_financieros">INDICADORES FINANCIEROS</string>
+    <string name="string_fragment_vencimientos_obligaciones">VENCIMIENTOS Y OBLIGACIONES</string>
+    <string name="string_fragment_about">ABOUT</string>
+    <string name="string_fragment_cerrar_sesion">CERRAR SESION</string>
+-->
+    <!-- Network -->
+    <string name="string_api_base_url">http://institutopacifico.com.pe/</string>
+    <string name="string_api_version">apiv1/</string>
+    <string name="string_api_boletin_diario">boletin_diario</string>
+    <string name="string_api_boletin_normas_legales">normas_legales</string>
+    <string name="string_api_tree_of_folders_and_articles">tree_of_folders_and_articles_t</string>
+    <string name="string_api_starred_articles">starred_articles</string>
+    <string name="string_api_session">session</string>
+    <string name="string_api_account_fragment_sign_in">sign_in</string>
+    <string name="string_api_account_fragment_sign_up">sign_up</string>
+
+    <string name="request_i_forgot_my_data">I_FORGOT_MY_DATA</string>
+    <string name="request_tree_of_folders_and_articles_revista">revista</string>
+
+
+    <string name="default_institutoPacifico_About_Link_moreAppsByUs">Vansuita</string>
+    <string name="default_institutoPacifico_About_contactUs_Title">Links de Contacto</string>
+    <string name="default_institutoPacifico_About_Link_playStore">Instituto+Pacífico+SAC</string>
+    <string name="default_institutoPacifico_About_Link_twitter">http://twitter.com/</string>
+    <string name="default_institutoPacifico_About_Link_google_plus">+JuniorVansuita</string>
+    <string name="default_institutoPacifico_About_Link_youtube_channels">UCh-iLCfHJodekMx7AXcUsYg</string>
+    <string name="default_institutoPacifico_About_Link_linkedin">arleu-cezar-vansuita-júnior-83769271</string>
+    <string name="default_institutoPacifico_About_whatsapp_name">Instituto Pacifico</string>
+    <string name="default_institutoPacifico_About_whatsapp_phone_number">+51 963 767 431</string>
+    <string name="default_institutoPacifico_About_Link_skype">htpp://plus.google.com/</string>
+    <string name="default_institutoPacifico_About_Link_google">htpp://plus.google.com/</string>
+
+
+    <!-- Keys for shared preferences -->
+    <string name="app_shared_preferences_key">shared_preferences</string>
+    <string name="user_data_object_as_json_key">app_and_user_data_object_as_json</string>
+    <string name="app_and_user_data_object_as_json_default_value">none</string>
+
+
+    <string name="facebook_app_id">123123</string>
+    <string name="activity_login_logout">Cerrar Sesión</string>
+
+
+    <!-- Default user information -->
+    <string name="default_institutoPacifico_About_userName">Usuario Anonimo</string>
+    <string name="default_institutoPacifico_About_Membership">Regístrate y disfruta de todos nuestros servicios.</string>
+    <string name="default_institutoPacifico_user_password"></string>
+    <string name="default_institutoPacifico_user_email"></string>
+    <string name="default_institutoPacifico_user_phone_number"></string>
+    <string name="default_institutoPacifico_user_address"></string>
+    <string name="default_institutoPacifico_guest_user_id"></string>
+    <string name="default_institutoPacifico_free_user_id">free_user</string>
+
+    <!-- RecyclerView values -->
+    <string name="integer_RecyclerViewInitialValuesStep">14</string>
+
+
+    <string name="bundle_extra_key_for_url_page_viewer_intent">key</string>
+    <string name="bundle_extra_key_for_pdf_url_page_viewer_intent">pdf_key</string>
+
+    <string name="boolean_is_dark_theme_activated_key">boolean_is_dark_theme_activated_key</string>
+
+
+    <!-- Fragments? -->
+    <string name="fragment_title_boletin_diario">BOLETIN DIARIO</string>
+    <string name="fragment_title_fragment_boletin_normas_legales">BOLETIN DE NORMAS LEGALES</string>
+    <string name="fragment_title_fragment_magazine">REVISTA</string>
+    <string name="fragment_title_fragment_sistema_informacion">SISTEMA DE INFORMACION</string>
+    <string name="fragment_title_fragment_indicadores_financieros">INDICADORES FINANCIEROS</string>
+    <string name="fragment_title_fragment_vencimientos_obligaciones">VENCIMIENTOS Y OBLIGACIONES</string>
+    <string name="fragment_title_fragment_settings">CONFIGURACION</string>
+    <string name="fragment_title_fragment_account">CUENTA</string>
+    <string name="fragment_title_fragment_about">CUENTA</string>
+    <string name="fragment_title_fragment_cerrar_sesion">CERRAR SESION</string>
+
+    <!-- FRAGMENTS DRAWABLES -->
+    <!-- No deberia ser editado -->
+    <string name="fragment_drawable_boletin_diario">ic_instituto_pacifico_diario_dinamic_24dp</string>
+    <string name="fragment_drawable_fragment_boletin_normas_legales">ic_instituto_pacifico_libro_dinamic_24dp</string>
+    <string name="fragment_drawable_fragment_magazine">ic_library_books_black_24dp</string>
+    <string name="fragment_drawable_fragment_sistema_de_informacion">ic_instituto_pacifico_carpetas_dinamic_24dp</string>
+    <string name="fragment_drawable_fragment_settings">ic_settings_dinamic_24dp</string>
+    <string name="fragment_drawable_fragment_account">ic_person_dinamic_24dp</string>
+
+
+    <!-- Messages -->
+    <string name="message_share">Compartir</string>
+    <string name="message_thread_error">Error de thread, no se pudo iniciar thread.</string>
+    <string name="message_server_error">Error de servidor, lo sentimos, por favor intente mas tarde.</string>
+    <string name="message_service_is_currently_in_development">Servicio en desarrollo</string>
+    <string name="message_entering_to_fragment">Accediendo al servicio...</string>
+    <string name="message_log_out_succesful">Session cerrada correctamente!</string>
+    <string name="message_boletin_request">Peticion</string>
+    <string name="message_there_is_no_more_data">No hay mas datos que mostrar!</string>
+    <string name="message_user_is_signed_in">Usuario registrado correctamente!</string>
+    <string name="message_please_sign_in">Por favor registrese para acceder a todos nuestros beneficios!</string>
+    <string name="message_default_tts_message">Instituto Pacifico</string>
+    <string name="message_we_have_found_n_matches">Numero de Resultados: </string>
+    <string name="message_have_you_lost_your_password"><u>Olvidé mi contraseña</u></string>
+    <string name="message_unsuccessfull_password_recovery">Recuperacion de contraseña sin exito.</string>
+    <string name="message_successfull_password_recovery">Proceso de recuperacion de contraseña correcta!</string>
+    <string name="message_dialog_custom_sign_up_password_hint">Password</string>
+    <string name="message_dialog_custom_sign_up_text_view_name">Nombre completo</string>
+    <string name="message_dialog_custom_sign_up_name_hint">Nombre</string>
+    <string name="message_dialog_custom_sign_up_email_text_view">Direccion de correo</string>
+    <string name="message_dialog_custom_sign_up_email_hint">Correo</string>
+    <string name="message_dialog_custom_sign_up_password1_text_view">Contraseña</string>
+    <string name="message_dialog_custom_sign_up_password2_text_view">Reintroduza su contraseña</string>
+    <string name="message_login_data_is_not_ok">Datos Invalidos! por favor revise su correo y contraseña.</string>
+
+    <!-- Constants -->
+    <string name="constant_date_query">daterange:</string>
+    <string name="constant_starred_articles_query">SHOW_MY_STARRED_ARTICLES</string>
+    <string name="text_view_text_dialog_custom_search_fecha_final">Fecha Final</string>
+    <string name="text_view_text_dialog_custom_search_fecha_inicial">Fecha Inicial</string>
+    <string name="text_view_text_dialog_custom_search_advanced_search">Busqueda Avanzada</string>
+    <string name="text_view_text_dialog_custom_search_query">Busqueda</string>
+    <string name="edit_text_hint_dialog_custom_search_query_hint">¿Que estas buscando?</string>
+    <string name="date_format">yyyy-MM-dd HH:mm:ss</string>
+    <string name="date_format_simplified">yyyy-MM-dd</string>
+    <string name="date_format_for_query">dd/MM/yyyy</string>
+    <string name="date_format_gregorian">yyyyD</string>
+    <string name="instituto_pacifico_sign_in">Acceder</string>
+    <string name="instituto_pacifico_sign_up">Crear Cuenta</string>
+    <string name="DATE_PICKER_DIALOG_TAG">DATE_PICKER_DIALOG_TAG</string>
+    <string name="SEARCH_PATTERN_CALENDAR_SINGLE_DATE_SEARCH">CALENDAR_SINGLE_DATE_SEARCH</string>
+    <string name="SEARCH_PATTERN_CALENDAR_DUAL_DATE_SEARCH_FIRST_DATE">SEARCH_PATTERN_CALENDAR_DUAL_DATE_SEARCH_FIRST_DATE</string>
+    <string name="SEARCH_PATTERN_CALENDAR_DUAL_DATE_SEARCH_SECOND_DATE">SEARCH_PATTERN_CALENDAR_DUAL_DATE_SEARCH_SECOND_DATE</string>
+    <string name="USER_OBJECT_PHONE_NUMBER_KEY">USER_OBJECT_PHONE_NUMBER_KEY</string>
+    <string name="message_sign_up_fragment_bad_name">Nombre Invalido, por favor ponga su nombre completo.</string>
+    <string name="message_sign_up_fragment_email">Correo Invalido, debe ser algo como: ejemplo@gmail.com</string>
+    <string name="message_sign_up_fragment_password_1">Contraseña Invalida: minimo 6 caracteres.</string>
+    <string name="message_sign_up_fragment_password_2">Contraseña Invalida: minimo 6 caracteres y ambas contraseñas deben ser iguales</string>
+    <string name="message_sign_up_button_ok">OK</string>
+    <string name="message_sign_up_button_cancel">Cancelar</string>
+
+    <string name="message_fragment_z_other_password_recovery_bad_email">Email Incorrecto! por favor revise sus correo nuevamente.</string>
+    <string name="fragment_title_fragment_sistema_de_informacion">SISTEMA DE INFORMACION</string>
+    <string name="fragment_title_fragment_codigos">COMPENDIO</string>
+    <string name="fragment_title_fragment_spij">SPIJ</string>
+    <string name="message_internet_connection_error">Error en la conexion de red, por favor verifique sus datos.</string>
+    <string name="string_api_error_service">save_errors_to_database</string>
+    <string name="toolbar_title_onckackpressed">Atrás</string>
+    <string name="message_fragment_transaction_helper_actualizar">Actualizar</string>
+    <string name="message_fragment_transaction_helper_cancelar">Cancelar</string>
+
+
+    <!-- Integers -->
+    <item name="splash_time" type="integer">50</item>
+    <item name="integer_RecyclerViewRefreshStep" type="integer">4</item>
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="recycler_view_load_time_delay">500</integer>
+    <integer name="integer_ok_message">1</integer>
+    <integer name="integer_failure_message">-1</integer>
+    <integer name="integer_RecyclerViewInitialValuesStep">14</integer>
+    <integer name="integer_network_status_code_ok">200</integer>
+    <integer name="page_viewer_buttons_scale">2</integer>
+    <integer name="integer_thread_failure_message">-2</integer>
+</resources>

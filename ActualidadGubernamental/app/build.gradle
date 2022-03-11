@@ -1,0 +1,277 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'com.google.gms.google-services'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    //  configurations.all {
+    //     resolutionStrategy.force 'com.google.code.findbugs:jsr305:1.3.9'
+    // }
+
+    def versionMajor = 8
+    def versionMinor = 2
+    def versionPatch = 1
+
+
+
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+    defaultConfig {
+        applicationId "com.institutopacifico.actualidad"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode versionMajor * 10000 + versionMinor * 100 + versionPatch
+        versionName versionMajor + "." + (versionMinor * 100 + versionPatch)
+        //   https://medium.com/@manas/manage-your-android-app-s-versioncode-versionname-with-gradle-7f9c5dcf09bf
+        //  versionName versionCode
+        //  testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+
+    signingConfigs {
+
+        release {
+            storeFile file(RELEASE_STORE_FILE)
+            storePassword RELEASE_STORE_PASSWORD
+            keyAlias RELEASE_KEY_ALIAS
+            keyPassword RELEASE_KEY_PASSWORD
+        }
+        release_empresarial {
+            storeFile file(RELEASE_STORE_FILE_EMPRESARIAL)
+            storePassword RELEASE_STORE_PASSWORD_EMPRESARIAL
+            keyAlias RELEASE_KEY_ALIAS_EMPRESARIAL
+            keyPassword RELEASE_KEY_PASSWORD_EMPRESARIAL
+        }
+    }
+
+    buildTypes {
+        release {
+            //  shrinkResources true
+            minifyEnabled false
+            useProguard false
+            multiDexEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable false
+            //   signingConfig signingConfigs.release
+        }
+
+        debug {
+            //shrinkResources true
+            minifyEnabled false
+            useProguard false
+            multiDexEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable true
+        }
+
+    }
+
+
+    sourceSets {
+        empresarial {
+            res.srcDirs = ['src/main/res', 'src/empresarial/res']
+        }
+        civil {
+            res.srcDirs = ['src/main/res', 'src/civil/res']
+        }
+
+        penal {
+            res.srcDirs = ['src/main/res', 'src/penal/res']
+        }
+
+        gubernamental {
+            res.srcDirs = ['src/main/res', 'src/gubernamental/res']
+        }
+
+    }
+
+    // Specifies a flavor dimension.
+    flavorDimensions "color"
+
+    productFlavors {
+        //TODO: Implement proguard
+        /*
+            empresarial {
+                applicationIdSuffix "empresarial"
+                versionNameSuffix "-empresarial"
+                dimension "color"
+                signingConfig signingConfigs.release_empresarial
+            }
+    /* */
+        civil {
+            applicationIdSuffix ".civil"
+            versionNameSuffix "-civil"
+            dimension "color"
+            signingConfig signingConfigs.release
+        }
+
+
+        penal {
+            applicationIdSuffix ".penal"
+            versionNameSuffix "-penal"
+            dimension "color"
+            signingConfig signingConfigs.release
+        }
+/* */
+        gubernamental {
+            applicationIdSuffix ".gubernamental"
+            versionNameSuffix "-gubernamental"
+            dimension "color"
+            signingConfig signingConfigs.release
+        }
+        /*   */
+    }
+
+    lintOptions {
+// Turns off checks for the issue IDs you specify.
+        disable 'TypographyFractions', 'TypographyQuotes'
+// Turns on checks for the issue IDs you specify. These checks are in
+// addition to the default lint checks.
+        enable 'RtlHardcoded', 'RtlCompat', 'RtlEnabled'
+// To enable checks for only a subset of issue IDs and ignore all others,
+// list the issue IDs with the 'check' property instead. This property overrides
+// any issue IDs you enable or disable using the properties above.
+        check 'NewApi', 'InlinedApi'
+// If set to true, turns off analysis progress reporting by lint.
+        quiet true
+// if set to true (default), stops the build if errors are found.
+        abortOnError false
+// if true, only report errors.
+        ignoreWarnings true
+    }
+    aaptOptions {
+        cruncherEnabled = true
+    }
+
+}
+
+repositories {
+    jcenter()
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+        //, 'com.google.code.findbugs'
+    })
+    compile 'com.android.support:appcompat-v7:25.0.0'
+    compile 'com.android.support:design:25.0.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    //Multidex
+    compile 'com.android.support:multidex:1.0.0'
+
+//------------------------------------------------------
+// VIEWS
+
+    //ReciclerView
+    compile 'com.android.support:cardview-v7:25.0.0'
+    compile 'com.android.support:recyclerview-v7:25.0.0'
+
+    //ultimaterecyclerview:library
+    //compile 'com.marshalchen.ultimaterecyclerview:library:0.7.0'
+    //compile 'in.srain.cube:ultra-ptr:1.0.11'
+    //compile 'jp.wasabeef:recyclerview-animators:2.2.3'
+
+    //RecyclerTreeView
+    compile 'com.github.TellH:RecyclerTreeView:1.2.0'
+
+    //Material SearchBar
+    compile 'com.github.mancj:MaterialSearchBar:0.7'
+
+    //MarkDownView 2
+    compile 'com.github.tiagohm.MarkdownView:library:0.16.0'
+
+    //material datetime picker
+    compile 'com.wdullaer:materialdatetimepicker:3.2.2'
+
+    //Folio Reader
+    //compile 'com.folioreader:folioreader:0.2.2'
+
+    //Floating Action Button
+    compile 'net.i2p.android.ext:floatingactionbutton:1.10.1'
+
+    // Calendar
+    compile 'com.prolificinteractive:material-calendarview:1.4.3'
+
+    // GraphView
+    compile 'com.jjoe64:graphview:4.2.1'
+
+//------------------------------------------------------
+// NETWORKING
+
+    //GSON
+    compile 'com.google.code.gson:gson:2.8.0'
+
+    //ION
+    compile 'com.koushikdutta.ion:ion:2.2.1'
+
+    //Image Loader Glide
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+
+//------------------------------------------------------
+// NOTIFICATIONS
+
+    //Snacky
+    // compile 'com.github.matecode:Snacky:1.0.2'
+
+    //Toasty
+    compile 'com.github.GrenderG:Toasty:1.2.5'
+
+    //TapTargetTiew
+    //compile 'com.getkeepsafe.taptargetview:taptargetview:1.9.1'
+
+//------------------------------------------------------
+//BEAUTIFIERS
+
+    //MaterialAbout
+    compile 'com.github.jrvansuita:MaterialAbout:0.1.6'
+
+    // SlidingRootNav
+    compile 'com.yarolegovich:sliding-root-nav:1.0.2'
+
+//------------------------------------------------------
+// PERFORMANCE
+    //CanaryLeak
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+
+//ButterKnife
+// compile 'com.jakewharton:butterknife:8.5.1'
+// annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+
+    //EventBUS
+    compile 'org.greenrobot:eventbus:3.0.0'
+
+    //------------------------------------------------------
+    // Utils
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    compile group: 'commons-io', name: 'commons-io', version: '2.5'
+
+//------------------------------------------------------
+// SDK
+
+    //Android Smart Login
+    // compile 'codelight.studios:android-smart-login:1.2'
+
+    //TextToSpeech
+    //compile 'net.gotev:speech:1.2.2'
+
+//-------------------------------------------------------
+// LOG
+    //Logger
+    compile 'com.orhanobut:logger:1.15'
+
+    //Kotlin Logging
+    //compile 'io.github.microutils:kotlin-logging:1.4.5'
+
+    testCompile 'junit:junit:4.12'
+
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    //  implementation 'com.google.firebase:firebase-crash:11.0.2'
+}
+

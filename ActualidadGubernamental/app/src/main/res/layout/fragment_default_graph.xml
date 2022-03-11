@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.institutopacifico.actualidad.activities.MainActivity"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/spacing_small"
+                    android:layout_marginRight="@dimen/spacing_small"
+                    android:text="TIPO DE CAMBIO AL DIA DE HOY" />
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tablelayout_fragment_default_graph"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.design.widget.TabItem
+                        android:id="@+id/tabitem_fragment_default_graph1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="USD > PEN" />
+
+                    <android.support.design.widget.TabItem
+                        android:id="@+id/tabitem_fragment_default_graph2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EUR > PEN" />
+                </android.support.design.widget.TabLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/gray"
+                                android:layout_gravity="center"
+                                android:orientation="vertical"
+                                android:padding="@dimen/spacing_1dp">
+
+                                <ImageView
+                                    android:id="@+id/imageview_fragment_default_graph_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/button_height_big"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_image_black_24dp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/textview_from__imageview_fragment_default_graph_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/spacing_small"
+                                android:layout_marginRight="@dimen/spacing_small"
+                                android:text="@string/app_name" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/gray"
+                                android:layout_gravity="center"
+                                android:orientation="vertical"
+                                android:padding="@dimen/spacing_1dp">
+
+                                <ImageView
+                                    android:id="@+id/imageview_fragment_default_graph_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/button_height_big"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_image_black_24dp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/textview_from__imageview_fragment_default_graph_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/app_name" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <include
+                    android:id="@+id/include_fragment_defaul_graph_description"
+                    layout="@layout/layout_recyclerview_graph_item" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/spacing_1dp"
+                    android:background="@color/colorPrimaryDark" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/spacing_normal" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/spacing_small"
+                    android:layout_marginRight="@dimen/spacing_small"
+                    android:text="GRAFICO DE VARIACION DEL PRECIO" />
+
+                <com.jjoe64.graphview.GraphView
+                    android:id="@+id/graphview_fragment_default_graph"
+                    android:layout_width="wrap_content"
+                    android:layout_height="400dp" />
+
+                <TextView
+                    android:id="@+id/textView_fragment_default_graph_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/spacing_small"
+                    android:layout_marginRight="@dimen/spacing_small"
+                    android:text="" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/spacing_1dp"
+                    android:background="@color/colorPrimaryDark" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview_fragment_default_graph_allvalues"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

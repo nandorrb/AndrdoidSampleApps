@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_boletin_diario"
+            android:icon="@drawable/ic_menu_boletin_diario"
+            android:title="@string/fragment_title_boletin_diario" />
+        <item
+            android:id="@+id/nav_boletin_normas_legales"
+            android:icon="@drawable/ic_menu_boletin_normas_legales"
+            android:title="@string/fragment_title_fragment_boletin_normas_legales" />
+        <item
+            android:id="@+id/nav_sistema_informacion"
+            android:icon="@drawable/ic_menu_sistema_informacion"
+            android:title="@string/fragment_title_fragment_sistema_informacion" />
+
+        <item
+            android:id="@+id/nav_indicadores_financieros"
+            android:icon="@drawable/ic_menu_indicadores_financieros"
+            android:title="@string/fragment_title_fragment_indicadores_financieros" />
+        <item
+            android:id="@+id/nav_vencimientos_obligaciones"
+            android:icon="@drawable/ic_menu_vencimientos_obligaciones"
+            android:title="@string/fragment_title_fragment_vencimientos_obligaciones" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_menu_about"
+            android:title="@string/fragment_title_fragment_about" />
+        <item
+            android:id="@+id/nav_cerrar_sesion"
+            android:icon="@drawable/ic_menu_cerrar_sesion"
+            android:title="@string/fragment_title_fragment_cerrar_sesion" />
+
+    </group>
+
+</menu>

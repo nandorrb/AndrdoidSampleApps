@@ -1,0 +1,67 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:id="@+id/itemview">
+<!-- THIS ISN'T THE ITEM VIEW!
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_article_boletin_item_utlimaterecyclerview"
+        android:text="test2"
+        android:ellipsize="end"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/description_article_boletin_item_utlimaterecyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_below="@+id/title_article_boletin_item_utlimaterecyclerview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:maxLines="1"
+        android:ellipsize="end"
+        />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/imageview_article_boletin_item_utlimaterecyclerview"
+        android:src="@drawable/ic_menu_home"
+        android:layout_below="@+id/description_article_boletin_item_utlimaterecyclerview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/imageButton_star_article_boletin_item_UltimateRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imageview_article_boletin_item_utlimaterecyclerview"
+        app:srcCompat="@mipmap/star" />
+
+    <ImageButton
+        android:id="@+id/imageButton_share_article_boletin_item_UltimateRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview_article_boletin_item_utlimaterecyclerview"
+        android:layout_toLeftOf="@+id/imageButton_star_article_boletin_item_UltimateRecyclerView"
+        app:srcCompat="@mipmap/share" />
+
+    <TextView
+        android:id="@+id/textView_uploaded_date_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title_article_boletin_item_utlimaterecyclerview"
+        android:layout_alignStart="@+id/title_article_boletin_item_utlimaterecyclerview"
+        android:layout_below="@+id/imageview_article_boletin_item_utlimaterecyclerview" />
+
+    -->
+
+</RelativeLayout>

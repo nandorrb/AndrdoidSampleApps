@@ -1,0 +1,14 @@
+<resources>
+    <!-- App Information -->
+    <string name="app_name">Actualidad Civil</string>
+    <string name="string_app_id">actualidad_civil</string>
+    <string name="revista_api_code">AC</string>
+
+
+    <!-- ABOUT SETTINGS -->
+    <string name="default_institutoPacifico_email_feedback">ventas@actualidadcivil.com.pe</string>
+    <string name="default_institutoPacifico_About_Link_website">http://actualidadcivil.com.pe/</string>
+    <string name="default_institutoPacifico_About_email">ventas@actualidadcivil.com.pe</string>
+    <string name="default_institutoPacifico_About_Link_facebook">actualidadcivil</string>
+
+</resources>

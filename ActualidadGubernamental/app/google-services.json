@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "965319225849",
+    "firebase_url": "https://actualidadgubernamental-34d2d.firebaseio.com",
+    "project_id": "actualidadgubernamental-34d2d",
+    "storage_bucket": "actualidadgubernamental-34d2d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965319225849:android:8ee797c5f9840725",
+        "android_client_info": {
+          "package_name": "com.institutopacifico.actualidad.penal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "965319225849-nevma7d9cp3f306es41egnnh1ra8ghjl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.institutopacifico.actualidad.penal",
+            "certificate_hash": "17c7a93dcc798e6d498715298ee862fd1c934458"
+          }
+        },
+        {
+          "client_id": "965319225849-p5lghvrjaur88uqm5fsj1jdkccahdpbc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7Ht1bf7YR3NBEeESS1RAuv7uMm20a5N8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "965319225849-p5lghvrjaur88uqm5fsj1jdkccahdpbc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearlayout_layout_recycler_view_graph_main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textview_layout_recycler_view_graph_date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/LightGrey"
+        android:gravity="center"
+        android:padding="@dimen/spacing_micro"
+        android:text="@string/app_name"
+        android:textColor="@color/actualidad_gubernamental_black" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:gravity="center"
+                android:text="IGV"
+                android:textColor="@color/actualidad_gubernamental_black" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/LightGrey"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="COMPRA"
+                        android:textColor="@color/actualidad_gubernamental_black" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/quarter_screen_size"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textview_layout_recycler_view_graph_item_igv_compra"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/spacing_micro"
+                            android:paddingTop="@dimen/spacing_micro"
+                            android:text="@string/app_name"
+                            android:textColor="@color/actualidad_gubernamental_black" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@color/LightGrey"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="VENTA"
+                        android:textColor="@color/actualidad_gubernamental_black" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/quarter_screen_size"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textview_layout_recycler_view_graph_item_igv_venta"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/spacing_micro"
+                            android:paddingTop="@dimen/spacing_micro"
+                            android:text="@string/app_name"
+                            android:textColor="@color/actualidad_gubernamental_black" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:gravity="center"
+                android:text="IR"
+                android:textColor="@color/actualidad_gubernamental_black" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/LightGrey"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="COMPRA"
+                        android:textColor="@color/actualidad_gubernamental_black" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/quarter_screen_size"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textview_layout_recycler_view_graph_item_ir_compra"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/spacing_micro"
+                            android:paddingTop="@dimen/spacing_micro"
+                            android:text="@string/app_name"
+                            android:textColor="@color/actualidad_gubernamental_black" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/LightGrey"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="VENTA"
+                        android:textColor="@color/actualidad_gubernamental_black" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/quarter_screen_size"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textview_layout_recycler_view_graph_item_ir_venta"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/spacing_micro"
+                            android:paddingTop="@dimen/spacing_micro"
+                            android:text="@string/app_name"
+                            android:textColor="@color/actualidad_gubernamental_black" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

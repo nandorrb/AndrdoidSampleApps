@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.institutopacifico.actualidad.activities.MainActivity"
+
+    >
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_simple_default_fragment_with_floating_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@color/defaut_background_color"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+    <!--
+    app:recyclerviewClipToPadding="true"
+        app:recyclerviewDefaultSwipeColor="@color/colorPrimary"
+        app:recyclerviewEmptyView="@layout/production_ultimate_recycler_view_empty_view"
+        app:recyclerviewFloatingActionView="@layout/production_native_recycler_view_floating_view"
+        app:recyclerviewScrollbars="vertical"
+     -->
+
+
+    <net.i2p.android.ext.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fab_production_native_recycler_view_floating_view"
+        android:layout_width="@dimen/button_height_tall"
+        android:layout_height="@dimen/button_height_tall"
+        android:layout_margin="@dimen/spacing_normal"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_add_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        >
+
+        <net.i2p.android.ext.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_view_show_starred_articles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/ic_star_white_24dp"
+
+            />
+
+        <net.i2p.android.ext.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_view_search_articles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/ic_instituto_pacifico_busqueda_white_24dp" />
+
+    </net.i2p.android.ext.floatingactionbutton.FloatingActionsMenu>
+
+
+</android.support.constraint.ConstraintLayout>
